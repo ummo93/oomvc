@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "target": "ES6",
+        "rootDir": "./lib",
+        "sourceMap": true,
+        "outDir": "./bin",
+        "experimentalDecorators": true
+    },
+        "include": [
+            "Scripts/**/*",
+            "typings/**/*",
+            "lib/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
