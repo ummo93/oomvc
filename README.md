@@ -75,6 +75,7 @@ $ npm install oomvc
 
 ## Documentation
 For details, use the [wiki](https://github.com/ummo93/oomvc/wiki/)
+You can also look at the sample application (oomvc + sequelize-typescript) at ./example folder.
 
 ## License
 

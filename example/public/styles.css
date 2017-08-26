@@ -1,0 +1,11 @@
+html {
+    background: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+body {
+    color: grey;
+}
+li {
+    list-style-type: none;
+}
