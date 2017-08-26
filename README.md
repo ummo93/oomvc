@@ -6,7 +6,7 @@ Object oriented web framework. OOMVC is a web framework with a minimal number of
 dependencies (handlebars templating engine only). Founded on pure http.Server.
 ### Server
 ```typescript
-import { Application } from "minimal-mvc";
+import { Application } from "oomvc";
 import { Server } from "http";
 import mainCtrl from './controller/MainCtrl';
  
@@ -29,9 +29,9 @@ export default new MainServer().init();
 ```
 ### Controller
 ```typescript
-import { Controller } from "minimal-mvc";
-import { Response } from "minimal-mvc/lib/Response";
-import { Request } from "minimal-mvc/lib/Request";
+import { Controller } from "oomvc";
+import { Response } from "oomvc/lib/Response";
+import { Request } from "oomvc/lib/Request";
  
 class MainCtrl extends Controller {
  

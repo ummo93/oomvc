@@ -1,7 +1,7 @@
 {
   "name": "oomvc",
   "description": "Object oriented web framework for NodeJS + Typescript",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "author": "Dmitry Lunyov <ummo93@gmail.com>",
   "license": "MIT",
   "repository": "ummo93/oomvc",
