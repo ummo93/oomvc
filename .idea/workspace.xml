@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="058a3550-7434-497e-998f-4153d79c56c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/package.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/bin/src/MainServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/bin/src/MainServer.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/bin/src/controller/MainCtrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/bin/src/controller/MainCtrl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/bin/src/model/User.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/bin/src/model/User.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/MainServer.ts" afterPath="$PROJECT_DIR$/example/src/MainServer.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/MinimalMVC.iml" afterPath="$PROJECT_DIR$/.idea/oomvc.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -31,23 +38,23 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2541">
-                <caret line="77" column="95" lean-forward="true" selection-start-line="77" selection-start-column="95" selection-end-line="77" selection-end-column="95" />
+              <first_editor relative-caret-position="990">
+                <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
                 <folding>
-                  <marker date="1503737539481" expanded="true" signature="338:444" ph="..." />
-                  <marker date="1503737539481" expanded="true" signature="375:444" ph="..." />
-                  <marker date="1503737539481" expanded="true" signature="484:798" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="593:617" ph="[...]" />
-                  <marker date="1503737539481" expanded="true" signature="656:796" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="699:788" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="881:1001" ph="..." />
-                  <marker date="1503737539481" expanded="true" signature="1038:1871" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="1224:1292" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="1383:1869" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="1404:1660" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
-                  <marker date="1503737539481" expanded="true" signature="1536:1650" ph="[...]" />
-                  <marker date="1503737539481" expanded="true" signature="1751:1799" ph="{...}" />
-                  <marker date="1503737539481" expanded="true" signature="1816:1861" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="431:537" ph="..." />
+                  <marker date="1503832122545" expanded="true" signature="468:537" ph="..." />
+                  <marker date="1503832122545" expanded="true" signature="577:894" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="686:710" ph="[...]" />
+                  <marker date="1503832122545" expanded="true" signature="749:892" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="792:884" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="977:1097" ph="..." />
+                  <marker date="1503832122545" expanded="true" signature="1134:1967" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="1320:1388" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="1479:1965" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="1500:1756" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
+                  <marker date="1503832122545" expanded="true" signature="1632:1746" ph="[...]" />
+                  <marker date="1503832122545" expanded="true" signature="1847:1895" ph="{...}" />
+                  <marker date="1503832122545" expanded="true" signature="1912:1957" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -90,12 +97,13 @@
         <option value="$PROJECT_DIR$/src/Request.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/index.ts" />
-        <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/lib/Request.ts" />
         <option value="$PROJECT_DIR$/lib/Response.ts" />
         <option value="$PROJECT_DIR$/lib/Controller.ts" />
         <option value="$PROJECT_DIR$/lib/Application.ts" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/example/src/MainServer.ts" />
+        <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -131,7 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -144,7 +152,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,12 +295,13 @@
       <workItem from="1503684628101" duration="44000" />
       <workItem from="1503728540633" duration="2158000" />
       <workItem from="1503731111398" duration="1853000" />
-      <workItem from="1503737383382" duration="167000" />
+      <workItem from="1503737383382" duration="207000" />
+      <workItem from="1503831873794" duration="516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15714000" />
+    <option name="totallyTimeSpent" value="16270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
@@ -305,7 +314,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58798283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58798283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19479166" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -345,40 +354,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="297">
-            <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-            <folding>
-              <marker date="1503737539481" expanded="true" signature="338:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="375:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="484:798" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="593:617" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="656:796" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="699:788" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="881:1001" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="1038:1871" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1224:1292" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1383:1869" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1404:1660" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
-              <marker date="1503737539481" expanded="true" signature="1536:1650" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="1751:1799" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1816:1861" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Response.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
@@ -402,20 +377,20 @@
           <first_editor relative-caret-position="1056">
             <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
             <folding>
-              <marker date="1503737539481" expanded="true" signature="338:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="375:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="484:798" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="593:617" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="656:796" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="699:788" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="881:1001" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="1038:1871" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1224:1292" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1383:1869" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1404:1660" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
-              <marker date="1503737539481" expanded="true" signature="1536:1650" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="1751:1799" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1816:1861" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="431:537" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="468:537" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="577:894" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="686:710" ph="[...]" />
+              <marker date="1503832122545" expanded="true" signature="749:892" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="792:884" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="977:1097" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="1134:1967" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1320:1388" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1479:1965" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1500:1756" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
+              <marker date="1503832122545" expanded="true" signature="1632:1746" ph="[...]" />
+              <marker date="1503832122545" expanded="true" signature="1847:1895" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1912:1957" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -478,20 +453,20 @@
           <first_editor relative-caret-position="1056">
             <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
             <folding>
-              <marker date="1503737539481" expanded="true" signature="338:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="375:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="484:798" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="593:617" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="656:796" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="699:788" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="881:1001" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="1038:1871" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1224:1292" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1383:1869" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1404:1660" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
-              <marker date="1503737539481" expanded="true" signature="1536:1650" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="1751:1799" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1816:1861" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="431:537" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="468:537" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="577:894" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="686:710" ph="[...]" />
+              <marker date="1503832122545" expanded="true" signature="749:892" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="792:884" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="977:1097" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="1134:1967" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1320:1388" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1479:1965" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1500:1756" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
+              <marker date="1503832122545" expanded="true" signature="1632:1746" ph="[...]" />
+              <marker date="1503832122545" expanded="true" signature="1847:1895" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1912:1957" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -658,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/oomvc.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -676,6 +644,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/model/User.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/MainServer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -683,23 +676,23 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2541">
-            <caret line="77" column="95" lean-forward="true" selection-start-line="77" selection-start-column="95" selection-end-line="77" selection-end-column="95" />
+          <first_editor relative-caret-position="990">
+            <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
             <folding>
-              <marker date="1503737539481" expanded="true" signature="338:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="375:444" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="484:798" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="593:617" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="656:796" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="699:788" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="881:1001" ph="..." />
-              <marker date="1503737539481" expanded="true" signature="1038:1871" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1224:1292" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1383:1869" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1404:1660" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
-              <marker date="1503737539481" expanded="true" signature="1536:1650" ph="[...]" />
-              <marker date="1503737539481" expanded="true" signature="1751:1799" ph="{...}" />
-              <marker date="1503737539481" expanded="true" signature="1816:1861" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="431:537" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="468:537" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="577:894" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="686:710" ph="[...]" />
+              <marker date="1503832122545" expanded="true" signature="749:892" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="792:884" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="977:1097" ph="..." />
+              <marker date="1503832122545" expanded="true" signature="1134:1967" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1320:1388" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1479:1965" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1500:1756" ph="{&quot;name&quot;: &quot;Alan&quot;...}" />
+              <marker date="1503832122545" expanded="true" signature="1632:1746" ph="[...]" />
+              <marker date="1503832122545" expanded="true" signature="1847:1895" ph="{...}" />
+              <marker date="1503832122545" expanded="true" signature="1912:1957" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

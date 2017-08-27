@@ -22,7 +22,7 @@ class MainServer extends Application {
             modelPaths: [path.resolve(__dirname + '/model')]
         });
         instance.listen(this.port, () => {
-            console.log('%d Server start at port ' + this.port, process.pid);
+            console.log('[%d] Server start at port %d', process.pid, this.port);
         });
     }
 }

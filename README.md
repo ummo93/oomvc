@@ -1,6 +1,7 @@
 # Object oriented web framework for NodeJS (TypeScript).
 
 [![NPM](https://img.shields.io/npm/v/oomvc.svg)](https://www.npmjs.com/package/oomvc)
+[![NPM Downloads](https://img.shields.io/npm/dm/oomvc.svg)](https://npmjs.org/package/oomvc)
 
 Object oriented web framework. OOMVC is a web framework with a minimal number of 
 dependencies (handlebars templating engine only). Founded on pure http.Server.
@@ -20,7 +21,7 @@ class MainServer extends Application {
  
     public start(instance: Server) {
         instance.listen(this.port, () => {
-            console.log('%d Server start at port ' + this.port, process.pid);
+            console.log('[%d] Server start at port %d', process.pid, this.port);
         });
     }
 }
@@ -74,7 +75,8 @@ $ npm install oomvc
 ```
 
 ## Documentation
-For details, use the [wiki](https://github.com/ummo93/oomvc/wiki/)
+For details, use the [wiki](https://github.com/ummo93/oomvc/wiki/).
+
 You can also look at the sample application (oomvc + sequelize-typescript) at ./example folder.
 
 ## License
