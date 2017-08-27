@@ -74,6 +74,25 @@ For Model components i recommend using [sequelize-typescript](https://github.com
 $ npm install oomvc
 ```
 
+## Examples
+
+Clone a git repository: 
+```bash
+$ git clone https://github.com/ummo93/oomvc.git
+```
+Go to example's folder:
+```bash
+$ cd ./example
+```
+Load all dependencies:
+```bash
+$ npm install
+```
+Start the server:
+```bash
+$ npm start
+```
+Congratulations (it remains only to install and run MySQL to work with the database)!
 ## Documentation
 For details, use the [wiki](https://github.com/ummo93/oomvc/wiki/).
 

@@ -1,10 +1,10 @@
 {
-  "name": "Example oomvc",
+  "name": "example_oomvc",
   "version": "1.0.0",
   "description": "",
   "main": "bin/MainServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/src/MainServer.js"
   },
   "author": "",
   "license": "MIT",
