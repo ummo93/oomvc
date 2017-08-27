@@ -21,7 +21,7 @@ class MainServer extends Application {
  
     public start(instance: Server) {
         instance.listen(this.port, () => {
-            console.log('[%d] Server start at port %d', process.pid, this.port);
+            console.log('[%d] Server start at port %s', process.pid, this.port);
         });
     }
 }
