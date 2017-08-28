@@ -1,19 +1,24 @@
 {
   "name": "oomvc",
   "description": "Object oriented web framework for NodeJS + Typescript",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "author": "Dmitry Lunyov <ummo93@gmail.com>",
   "license": "MIT",
   "repository": "ummo93/oomvc",
   "homepage": "https://luniverse.herokuapp.com/",
   "keywords": [
+    "mvc",
+    "typescript",
+    "es7",
+    "oop",
     "oomvc",
     "framework",
     "web",
     "rest",
     "restful",
     "app",
-    "api"
+    "api",
+    "minimalism"
   ],
   "dependencies": {
     "handlebars": "^4.0.10"
@@ -22,7 +27,6 @@
     "LICENSE",
     "Readme.md",
     "lib/",
-    "bin/",
     "index.ts",
     "index.js"
   ]
