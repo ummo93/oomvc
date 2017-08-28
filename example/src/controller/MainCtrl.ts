@@ -5,7 +5,8 @@ import { User } from '../model/User'
 
 class MainCtrl extends Controller {
 
-    public viewPath = "./src/views/"; // Redefining view path. Defaults = "./src/views/"
+    protected viewPath = "./src/views/"; // Redefining view path. Defaults = "./src/views/"
+    protected partialsPath = "./src/views/inc/"; // Redefine path to handlebars partials. Defaults = "./src/views/"
 
     @Controller.get("/")
     private getMainPage(req: Request, res: Response): void {
@@ -47,4 +48,4 @@ class MainCtrl extends Controller {
     }
 }
 
-export default new MainCtrl();
+export default new MainCtrl().init();

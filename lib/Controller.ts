@@ -21,6 +21,7 @@ import fs = require('fs');
  * export default new MainCtrl();
  * @class
  * */
+
 export class Controller {
     /**
      * @property {Object} mappedHandlers - mappings: 0 - GET, 1 - POST, 2 - PUT, 3 - DELETE
@@ -28,9 +29,26 @@ export class Controller {
      */
     public static mappedHandlers = { 0: { }, 1: { }, 2: { }, 3: { } };
     /**
-     * @property {Object} viewPath - define path for vies files
+     * @property {string} viewPath - define path for views files
      */
     protected viewPath = "./src/views/";
+    /**
+     * @property {string} partialsPath - define path for handlebars partials directory
+     */
+    protected partialsPath = "./src/views/";
+
+    // We need to register all files from partials folder
+    public init() {
+        // Instance of this class will not created dynamically, so we can use Sync methods;
+        const partials: Array<string> = fs.readdirSync(this.partialsPath);
+        for(let i = 0; i < partials.length; i++) {
+            try {
+                let content = fs.readFileSync(this.partialsPath + partials[i], 'utf8');
+                Handlebars.registerPartial(partials[i].split(".")[0], content);
+            } catch(e) { /* This is directory. Ignor.*/}
+        }
+        return this;
+    }
 
     /**
      * Set handler to handle GET requests

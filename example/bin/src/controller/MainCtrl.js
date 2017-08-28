@@ -23,6 +23,7 @@ class MainCtrl extends oomvc_1.Controller {
     constructor() {
         super(...arguments);
         this.viewPath = "./src/views/"; // Redefining view path. Defaults = "./src/views/"
+        this.partialsPath = "./src/views/inc/"; // Redefine path to handlebars partials. Defaults = "./src/views/"
     }
     getMainPage(req, res) {
         let data = {
@@ -79,5 +80,5 @@ __decorate([
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], MainCtrl.prototype, "getUser", null);
-exports.default = new MainCtrl();
+exports.default = new MainCtrl().init();
 //# sourceMappingURL=MainCtrl.js.map

@@ -63,7 +63,7 @@ class MainCtrl extends Controller {
     }
 }
  
-export default new MainCtrl();
+export default new MainCtrl().init();
 ```
 ## Model
 For Model components i recommend using [sequelize-typescript](https://github.com/RobinBuschmann/sequelize-typescript/) package since it uses the most acceptable and similar syntax.
