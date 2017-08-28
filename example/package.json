@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/MainServer.js",
   "scripts": {
-    "start": "node ./bin/src/MainServer.js"
+    "start": "node ./bin/MainServer.js"
   },
   "author": "",
   "license": "MIT",
