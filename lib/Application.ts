@@ -24,7 +24,7 @@ export enum Method {
  * class MainServer extends Application {
  *
  *     public port = process.env.PORT || 5000;
- *     public staticPath = "./public";
+ *     public staticPath = "public";
  *     public controllers = [
  *         mainCtrl
  *     ];
@@ -53,7 +53,7 @@ export abstract class Application {
     /**
      * @property {string} staticPath - Path for static files
      */
-    protected staticPath: string = "./public";
+    protected staticPath: string = "public";
     /**
      * @property {Server} app - Raw server instance
      */
@@ -139,15 +139,16 @@ export abstract class Application {
     private sendFile(pathName: string, res: Response): void {
         // based on the URL path, extract the file extention. e.g. .js, .doc, ...
         const ext = path.parse(pathName).ext;
+        const resolvePath = path.resolve(process.env.PWD, this.staticPath) + pathName;
         // maps file extention to MIME typere
-        fs.exists(this.staticPath + pathName, (exist) => {
+        fs.exists(resolvePath, (exist) => {
             if(!exist) {
                 // if the file is not found, return 404
                 this.except(pathName, res, 404);
                 return;
             }
             // read file from file system
-            fs.readFile(this.staticPath + pathName, (err, data) => {
+            fs.readFile(resolvePath, (err, data) => {
                 if(err){
                     this.except(pathName, res, 500);
                 } else {

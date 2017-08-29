@@ -1,6 +1,7 @@
 import { Method } from "./Application";
 import Handlebars = require('handlebars');
 import fs = require('fs');
+import * as path from "path";
 
 /**
  * Controller
@@ -31,11 +32,15 @@ export class Controller {
     /**
      * @property {string} viewPath - define path for views files
      */
-    protected viewPath = "./src/views/";
+    protected viewPath = "src/views/";
     /**
      * @property {string} partialsPath - define path for handlebars partials directory
      */
-    protected partialsPath = "./src/views/";
+    protected partialsPath = "src/views/";
+    /**
+     * @property {string} viewsExt - define extension of view files
+     */
+    protected viewsExt = ".hbs";
 
     // We need to register all files from partials folder
     public init() {
@@ -155,7 +160,8 @@ export class Controller {
      */
     public render(templateName: string, data: any): Promise<string> {
         return new Promise<string>((resolve, reject) => {
-            fs.readFile(this.viewPath + templateName + ".hbs", 'utf8', (error, innerText) => {
+            let file = path.resolve(process.env.PWD, this.viewPath, templateName + this.viewsExt);
+            fs.readFile(file, 'utf8', (error, innerText) => {
                 if(error) {
                     reject(error.message);
                 } else {

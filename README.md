@@ -14,7 +14,7 @@ import mainCtrl from './controller/MainCtrl';
 class MainServer extends Application {
  
     public port = process.env.PORT || 5000;
-    public staticPath = "./public";
+    public staticPath = "public";
     public controllers = [
         mainCtrl
     ];
@@ -36,7 +36,8 @@ import { Request } from "oomvc/lib/Request";
  
 class MainCtrl extends Controller {
  
-    public viewPath = "./src/views/"; // Redefining view path. Defaults = "./src/views/"
+     public viewPath = "src/views/"; // Redefining view path. Defaults = "./src/views/"
+     protected partialsPath = "src/views/inc/"; // Redefine path to handlebars partials. Defaults = "./src/views/"
      
      @Controller.get("/hello/:name")
      private getUser(req: Request, res: Response) {
