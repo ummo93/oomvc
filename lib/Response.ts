@@ -102,6 +102,12 @@ export class ResponseEntity implements Response {
     }
 
     public send(body: string, status: number): void {
+        let cookies = "";
+        if(this.headers['Set-Cookie']) {
+            this.headers['Set-Cookie'].forEach((item, i) => {
+                cookies += `Set-Cookie: ${ item }\n`
+            });
+        }
         this.entry.writeHead(status, this.headers);
         this.entry.end(`${body}\n`);
     }
@@ -150,10 +156,11 @@ export class ResponseEntity implements Response {
     }
 
     public cookie(name: string, value: string, expire?: Date): Response {
+        if(!this.headers['Set-Cookie']) this.headers['Set-Cookie'] = [];
         if(expire) {
-            this.headers['Set-Cookie'] = `${name}=${value}; expires=${expire}`;
+            this.headers['Set-Cookie'].push(`${name}=${value}; expires=${expire}`);
         } else {
-            this.headers['Set-Cookie'] = `${name}=${value}`;
+            this.headers['Set-Cookie'].push(`${name}=${value}`);
         }
         return this;
     }

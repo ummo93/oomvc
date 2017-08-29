@@ -125,7 +125,7 @@ export class RequestEntity implements Request {
         this.query = querystring.parse(this.url.query);
         this.method = req.method;
         this.headers = req.headers;
-        this.cookies = querystring.parse(req.headers.cookie);
+        this.cookies = this.getCookies(req.headers.cookie);
         if(postData) this.body = new RequestBodyEntity(postData);
     }
 
@@ -148,4 +148,19 @@ export class RequestEntity implements Request {
             return undefined;
         }
     }
+
+    private getCookies(rawCookies): any {
+        if(rawCookies) {
+            let cookiePairs = rawCookies.split(/;\s?/);
+            let cookies = {};
+            cookiePairs.forEach((item, i) => {
+                let cooka = item.split('=');
+                cookies[cooka[0]] = cooka[1];
+            });
+            return cookies;
+        } else {
+            return {};
+        }
+    }
+
 }
