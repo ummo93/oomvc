@@ -7,8 +7,8 @@ const path = require("path");
 class MainServer extends oomvc_1.Application {
     constructor() {
         super(...arguments);
-        this.port = process.env.PORT || 5000;
-        this.staticPath = "./public";
+        this.port = process.env.PORT || 5001;
+        this.staticPath = "public";
         this.controllers = [
             MainCtrl_1.default
         ];

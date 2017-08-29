@@ -22,8 +22,8 @@ const User_1 = require("../model/User");
 class MainCtrl extends oomvc_1.Controller {
     constructor() {
         super(...arguments);
-        this.viewPath = "./src/views/"; // Redefining view path. Defaults = "./src/views/"
-        this.partialsPath = "./src/views/inc/"; // Redefine path to handlebars partials. Defaults = "./src/views/"
+        this.viewPath = "src/views/"; // Redefining view path. Defaults = "./src/views/"
+        this.partialsPath = "src/views/inc/"; // Redefine path to handlebars partials. Defaults = "./src/views/"
     }
     getMainPage(req, res) {
         let data = {

@@ -6,8 +6,8 @@ import * as path from "path";
 
 class MainServer extends Application {
 
-    public port = process.env.PORT || 5000;
-    public staticPath = "./public";
+    public port = process.env.PORT || 5001;
+    public staticPath = "public";
     public controllers = [
         mainCtrl
     ];
